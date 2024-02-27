@@ -25,8 +25,8 @@ var CryptoJS = loadCryptoJS()
 const maotai = new Maotai()
 // -----------------------------------------------------------------------------------------
 // 配置项
-var province = $.getdata('imaotai__config__province') || '' // 省份
-var city = $.getdata('imaotai__config__city') || '' // 城市
+var province = $.getdata('imaotai__config__province') || '广东' // 省份
+var city = $.getdata('imaotai__config__city') || '中山' // 城市
 var itemList = $.getdata('imaotai__config__itemcode')?.split(',') || ['10941', '10942'] // 预约项
 var itemMap = {
     10941: '贵州茅台酒（甲辰龙年）',
