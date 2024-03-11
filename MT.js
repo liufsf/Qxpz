@@ -25,8 +25,8 @@ var CryptoJS = loadCryptoJS()
 const maotai = new Maotai()
 // -----------------------------------------------------------------------------------------
 // 配置项
-var province = $.getdata('imaotai__config__province') || '广东' // 省份
-var city = $.getdata('imaotai__config__city') || '中山' // 城市
+var province = $.getdata('imaotai__config__province') || '广东省' // 省份
+var city = $.getdata('imaotai__config__city') || '中山市' // 城市
 var itemList = $.getdata('imaotai__config__itemcode')?.split(',') || ['10941', '10942'] // 预约项
 var itemMap = {
     10941: '贵州茅台酒（甲辰龙年）',
@@ -34,8 +34,8 @@ var itemMap = {
     2478: '贵州茅台酒（珍品）',
     10942: '贵州茅台酒（甲辰龙年）x2'
 }
-var address = $.getdata('imaotai__config__address') || '' // 详细地址
-var location = $.getdata('imaotai__config__location') || '' // 地址经纬度
+var address = $.getdata('imaotai__config__address') || '广东省中山市起湾道56号' // 详细地址
+var location = $.getdata('imaotai__config__location') || '113.404507,22.533895' // 地址经纬度
 var shopid = $.getdata('imaotai__config__shopid') || '' // 商铺id
 var isTravel = $.getdata('imaotai__config__istravel') || false // 是否开启茅运旅行
 var imaotaiParams = JSON.parse($.getdata('imaotai_params') || '{}') // 抓包参数
