@@ -8,7 +8,7 @@ const $ = new Env('京东价格保护');
 const unifiedGatewayName = 'https://api.m.jd.com'
 
 // 请先配置 token!!!最好抓APP的！
-let tokens = 'pt_key=AAJl86cuADB2KREG1Le0gLmyC1_Pw_ty-dCZWLF0QwyzBp4wfdOBZOpNOxEyx-i2iptdYEBkJZI;pt_pin=jd_77397b6a47387' // @ 分隔
+let tokens = 'pt_key=AAJmK1AZADCTEe4QQ3OrBiR27jiJc2HCT0N1ALaYxkjm-UmJkAGzAggk9ApoggZ6KBlG4LXmNJg;pt_pin=jd_77397b6a47387' // @ 分隔
 $.tokenList = []
 $.HyperParam = {
     sid_hid: '',
