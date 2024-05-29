@@ -1,5 +1,5 @@
 /*
-by ZCY01 20210919
+by ZCY01 20210919 111
 5 0 * * * https://raw.githubusercontent.com/yyn618/QuantumultX-Script/master/Script/Files/JD/jd_priceProtect.js, tag=京东价保, img-url=https://raw.githubusercontent.com/ZCY01/img/master/pricev1.png, enabled=true
 */
 
@@ -8,7 +8,7 @@ const $ = new Env('京东价格保护');
 const unifiedGatewayName = 'https://api.m.jd.com'
 
 // 请先配置 token!!!最好抓APP的！
-let tokens = 'pt_key=AAJmK1AZADCTEe4QQ3OrBiR27jiJc2HCT0N1ALaYxkjm-UmJkAGzAggk9ApoggZ6KBlG4LXmNJg;pt_pin=jd_77397b6a47387' // @ 分隔
+let tokens = 'pt_key=AAJmK1AZADCTEe4QQ3OrBiR27jiJc2HCT0N1ALaYxkjm-UmJkAGzAggk9ApoggZ6KBlG4LXmNJg;pt_pin=jd_77397b6a47387@pt_key=AAJmTdHLADBveFp0rVkNcP07cOVsv_IPVLnvUa0wMOO_TRRwUn1oy3aCGQDtqsw2Ek5FTS3nQOo;pt_pin=jd_77397b6a47387' // @ 分隔
 $.tokenList = []
 $.HyperParam = {
     sid_hid: '',
