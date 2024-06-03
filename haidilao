@@ -25,7 +25,7 @@
 ******************************************/
 // env.js 全局
 const $ = new Env("海底捞");//脚本名称
-const ckName = "hdl_data";//环境变量声明
+const ckName = "TOKEN_APP_4ab2fd3e-4ed9-4910-a146-5abf198cb646";//环境变量声明
 //-------------------- 一般不动变量区域 -------------------------------------
 const Notify = 1;//0为关闭通知,1为打开通知,默认为1
 const notify = $.isNode() ? require('./sendNotify') : '';//通知，用于适配青龙
@@ -91,7 +91,7 @@ class UserInfo {
                     'Content-Type': 'application/json',
                     'user-agent': 'Mozilla/5.0 (Linux; Android 10; MI 8 Lite Build/QKQ1.190910.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4435 MMWEBSDK/20221206 Mobile Safari/537.36 MMWEBID/2585 MicroMessenger/8.0.32.2300(0x2800205D) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 miniProgram/wx1ddeb67115f30d1a',
                     'reqtype': 'APPH5',
-                    '_haidilao_app_token': TOKEN_APP_4ab2fd3e-4ed9-4910-a146-5abf198cb646,
+                    '_haidilao_app_token': hdl_data,
                     'origin': 'https://superapp-public.kiwa-tech.com',
                     'x-requested-with': 'com.tencent.mm',
                     'sec-fetch-site': 'same-origin',
