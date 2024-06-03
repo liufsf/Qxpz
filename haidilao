@@ -25,13 +25,13 @@
 ******************************************/
 // env.js 全局
 const $ = new Env("海底捞");//脚本名称
-const ckName = "hdl_data";//环境变量声明
+//const ckName = "hdl_data";//环境变量声明
 //-------------------- 一般不动变量区域 -------------------------------------
 const Notify = 1;//0为关闭通知,1为打开通知,默认为1
 const notify = $.isNode() ? require('./sendNotify') : '';//通知，用于适配青龙
 let envSplitor = ["@"]; //多账号分隔符
 let userCookie = ($.isNode() ? process.env[ckName] : $.getdata(ckName)) || '';//获取环境变量
-let hal_data = "TOKEN_APP_4ab2fd3e-4ed9-4910-a146-5abf198cb646";//环境变量声明
+const ckName = "TOKEN_APP_4ab2fd3e-4ed9-4910-a146-5abf198cb646"
 let userList = [];//用于存储多账号列表
 let userIdx = 0;//用于判断账号下标
 let userCount = 0;//统计多账号数量
