@@ -1,0 +1,36 @@
+//用移动云盘网页版登录
+
+// Quantumult X Script to Automatically Capture and Save Authorization Token
+const tokenKey = 'yun139AuthorizationToken'; // 用于保存令牌的键名
+
+// 检查请求头中是否存在 Authorization 字段
+if ($request.headers['Authorization']) {
+    let authToken = $request.headers['Authorization']; // 获取 Authorization 令牌
+    
+    // 将 Authorization 令牌保存到 Quantumult X 环境变量中
+    $prefs.setValueForKey(authToken, tokenKey);
+    
+    console.log(`成功保存 Authorization 令牌: ${authToken}`);
+// 添加获取成功的通知
+    $notify("令牌获取成功", "成功捕获到令牌", `令牌内容: ${authToken}`);
+} else {
+    console.log('未找到 Authorization 令牌，请检查请求头。');
+}
+
+$done({});
+
+// Quantumult X Script to Automatically Add Saved Authorization Token to Requests
+const savedTokenKey = 'yun139AuthorizationToken'; // 与之前保存令牌时使用的键名一致
+
+// 从 Quantumult X 环境变量中获取已保存的 Authorization 令牌
+const savedAuthToken = $prefs.valueForKey(savedTokenKey);
+
+if (savedAuthToken) {
+    // 将已保存的 Authorization 令牌添加到请求头中
+    $request.headers['Authorization'] = savedAuthToken;
+    console.log(`已添加保存的 Authorization 令牌到请求头: ${savedAuthToken}`);
+} else {
+    console.log('未找到已保存的 Authorization 令牌，请检查存储。');
+}
+
+$done({ headers: $request.headers });
