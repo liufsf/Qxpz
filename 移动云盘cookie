@@ -1,9 +1,9 @@
 //用移动云盘网页版登录
 [rewrite_local]
-^https:\/\/middle\.yun\.139\.com\/openapi\/cloudHead\/query$ url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Super.js
+^https:\/\/middle\.yun\.139\.com\/openapi\/cloudHead\/query$ url script-request-header https://raw.githubusercontent.com/liufsf/Qxpz/refs/heads/CX/移动云盘cookie
 
 [mitm]
-hostname = *.snssdk.com
+hostname = *https://ut-static.udache.com
 
 
 // Quantumult X Script to Automatically Capture and Save Authorization Token
