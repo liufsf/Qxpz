@@ -1,4 +1,4 @@
-//用移动云盘网页版登录
+//移动云盘app登录
 [rewrite_local]
 ^https:\/\/middle\.yun\.139\.com\/openapi\/cloudHead\/query$ url script-request-header https://raw.githubusercontent.com/liufsf/Qxpz/refs/heads/CX/移动云盘cookie
 
