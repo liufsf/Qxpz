@@ -1,0 +1,11 @@
+mix-rule-providers:
+  bilibili:
+    type: http
+    behavior: classical
+    url: https://whatshub.top/rule/BiliBili.rule
+    path: ./ruleset/bilibili.yaml
+    interval: 86400
+
+rules:
+  - RULE-SET,bilibili,Proxy
+  - MATCH,DIRECT
